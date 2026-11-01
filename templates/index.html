@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NetGuard</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>NetGuard</h1>
+        <h2>Network Monitoring System</h2>
+
+        <div class="card">
+            <h3>Internet Status</h3>
+            <h2>{{ status }}</h2>
+        </div>
+
+        <div class="card">
+            <h3>Local IP Address</h3>
+            <h2>{{ ip }}</h2>
+        </div>
+
+        <button onclick="location.reload()">
+            Refresh Network Status
+        </button>
+
+    </div>
+
+</body>
+</html>
